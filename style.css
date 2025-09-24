@@ -142,3 +142,47 @@ article h2 {
     border: none;
     border-radius: 8px;
 }
+
+.skil-contain {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 7px;
+}
+
+.skil-contain .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skil-contain .nome {
+    font-weight: bold;
+    color: var(--texto);
+
+}
+
+.skil-contain .percentual {
+    font-weight: bold;
+    color: var(--destaque);
+}
+
+.skil-contain .barra {
+    width: 100%;
+    height: 8px;
+    background-color: var(--fundo-principal);
+    border-radius: 4px;
+}
+
+.skil-contain .barra .progresso {
+    height: 100%;
+    background-color: var(--destaque);
+    border-radius: 4px;
+    transition: width 1s ease-in-out;
+}
+
+@media screen and (min-width: 768px) {
+    .skil-contain {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
