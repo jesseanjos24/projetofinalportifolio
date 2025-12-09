@@ -22,6 +22,16 @@ body {
     color: var(--texto);
 }
 
+body.escuro {
+    --fundo-principal: #222222;
+    --texto: #e0e0e0;
+    --texto-inverso: #333333;
+    --destaque:#ff5522;
+    --dataque-inverso: #a73917 ;
+    --fundo-do-cart:#444444;
+    transition: background-color 0.4s, color 0.3s;
+}
+
 header {
     display: flex;
     justify-content: flex-end;
